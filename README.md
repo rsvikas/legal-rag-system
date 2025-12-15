@@ -129,3 +129,24 @@ This project builds a robust pipeline to:
 
 This system provides **text retrieval only** from legal documents.  
 It does **not** provide legal advice or interpretation.
+
+---
+
+## Architecture Overview
+
+PDFs
+ ↓
+OCR + Native Text Extraction
+ ↓
+LLM-based OCR Correction (Ollama)
+ ↓
+Recursive + Semantic Chunking
+ ↓
+Local Embeddings (nomic)
+ ↓
+FAISS Vector Index
+ ↓
+RAG Query Pipeline
+ ↓
+Local LLM Answer (Verbatim Legal Text)
+
