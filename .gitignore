@@ -1,0 +1,23 @@
+# Generated data
+*.faiss
+*.json
+*.jsonl
+*.zip
+
+# Runtime
+progress.json
+
+# OCR / text outputs
+raw_ocr/
+output_final/
+chunks/
+embeddings/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# OS
+Thumbs.db
+.DS_Store
